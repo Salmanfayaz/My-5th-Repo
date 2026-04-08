@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EV Charging Website</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+body{background:#0b1220;color:#fff}
+header{display:flex;justify-content:space-between;align-items:center;padding:20px 50px;background:#0e1628}
+header h1{color:#fff}
+nav a{margin:0 15px;color:#ccc;text-decoration:none}
+.btn{background:linear-gradient(45deg,#ff00cc,#3333ff);padding:10px 20px;border-radius:25px;color:#fff;text-decoration:none;border:none;cursor:pointer}
+.hero{display:flex;align-items:center;justify-content:space-between;padding:80px 50px}
+.hero-text h2{font-size:48px}
+.hero-text p{margin:20px 0;color:#bbb}
+.hero img{width:450px;border-radius:20px}
+.section{padding:80px 50px;text-align:center}
+.cards{display:flex;gap:30px;flex-wrap:wrap;justify-content:center;margin-top:40px}
+.card{background:#111a2e;padding:20px;border-radius:15px;width:300px;transition:.3s;box-shadow:0 0 20px rgba(0,0,0,0.3)}
+.card:hover{transform:translateY(-10px)}
+.card img{width:100%;height:180px;object-fit:cover;border-radius:10px}
+.card h3{margin:15px 0}
+.card p{color:#bbb}
+.about{display:flex;align-items:center;gap:50px;flex-wrap:wrap;text-align:left}
+.about img{width:400px;border-radius:20px}
+.about-text{max-width:500px}
+.contact{background:linear-gradient(45deg,#ff00cc,#3333ff);padding:50px;border-radius:30px;margin:50px}
+.contact form{display:flex;flex-direction:column;gap:10px}
+.contact input,.contact textarea{width:100%;padding:12px;border:none;border-radius:5px}
+footer{text-align:center;padding:20px;background:#0e1628}
+@media(max-width:900px){.hero{flex-direction:column;text-align:center}.hero img{width:300px}.about{flex-direction:column;text-align:center}.about img{width:300px}}
+</style>
+</head>
+<body>
+<header>
+<h1>lade-plus.de</h1>
+<nav>
+<a href="#">Home</a>
+<a href="#services">Services</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</nav>
+<a href="#contact" class="btn">Kontakt</a>
+</header>
+
+<section class="hero">
+<div class="hero-text">
+<h2>Your EV Charging Partner</h2>
+<p>Smart EV charging solutions for home, business and cities.</p>
+<a href="#services" class="btn">Learn More</a>
+</div>
+<img src="https://images.unsplash.com/photo-1619767886558-efdc259cde1a" alt="car">
+</section>
+
+<section class="section" id="services">
+<h2>Our Solutions</h2>
+<div class="cards">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485">
+<h3>Private Customers</h3>
+<p>Install smart EV chargers at home with full automation and monitoring.</p>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc">
+<h3>Business Solutions</h3>
+<p>Scale your EV infrastructure for offices, malls, and enterprises.</p>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1593941707882-a5bac6861d75">
+<h3>Public Charging</h3>
+<p>Build modern EV charging networks for cities and communities.</p>
+</div>
+</div>
+</section>
+
+<section class="section about" id="about">
+<img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231">
+<div class="about-text">
+<h2>About Us</h2>
+<p>We are leaders in EV charging technology, providing innovative and scalable solutions for individuals, businesses, and governments.</p>
+<p>From installation to maintenance, we handle everything to make EV charging simple and efficient.</p>
+</div>
+</section>
+
+<section class="contact" id="contact">
+<h2>Contact Us</h2>
+<form>
+<input type="text" placeholder="Your Name" required>
+<input type="email" placeholder="Email Address" required>
+<input type="text" placeholder="Phone Number">
+<textarea rows="5" placeholder="Your Message"></textarea>
+<button class="btn">Submit Now</button>
+</form>
+</section>
+
+<footer>
+<p>© 2026 EV Charging. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
